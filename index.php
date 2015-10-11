@@ -43,11 +43,9 @@
 
                 <ul class="nav navbar-right top-nav">  
                     
-                    <? //if ($this->config->item('type_inst') == 'demo' or $this->config->item('type_inst') == 'multi'): ?>
-                        <li>
-                            <a href="/user/history">На балансе 1000<b> <?//= $this->lib->get_user_balance($this->user->id) ?></b> лидов</a>
-                        </li>
-                    <? //endif; ?>
+                    <li>
+                        <a href="/user/history">На балансе 1000 лидов</a>
+                    </li>
                         
                     <li>
                         <a href="/auth/logout"><i class="fa fa-fw  fa-power-off"></i> Выход </a>
@@ -57,29 +55,29 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav side-nav">
                    
-                        <li <? //if ($this->uri->segment('2') == 'stat') echo 'class="active"' ?>>
+                        <li>
                             <a href="/user/stat"><i class="fa  fa-fw fa-users"></i> База лидов</a>
                         </li>
                       
-                        <li <? //if ($this->uri->segment('2') == 'code') echo 'class="active"' ?>>
+                        <li>
                             <a href="/user/code"><i class="fa fa-fw fa-desktop"></i> Подключить сайты</a>
                         </li>
 
-                        <? //if ($this->config->item('type_inst') == 'multi'): ?>
-                            <li  <?// if ($this->uri->segment('2') == 'payment') echo 'class="active"' ?>>
+                        
+                            <li>
                                 <a href="/user/payment"><i class="fa  fa-fw fa-money"></i> Платежи</a>
                             </li>
 
-                            <li  <? //if ($this->uri->segment('2') == 'order') echo 'class="active"' ?>>
+                            <li>
                                 <a href="/user/order"><i class="fa fa-fw fa-shopping-cart"></i> Купить лидов</a>
                             </li>
 
-                            <li  <? //if ($this->uri->segment('2') == 'history') echo 'class="active"' ?>>
+                            <li >
                                 <a href="/user/history"><i class="fa fa-fw fa-history"></i>  История лидов</a>
                             </li>
-                        <? //endif; ?>
+                        
 
-                        <li  <? //if ($this->uri->segment('2') == 'profile') echo 'class="active"' ?>>
+                        <li  >
                             <a href="/user/profile"><i class="fa fa-fw fa-user"></i>  Профиль пользователя</a>
                         </li>
                         
@@ -91,7 +89,7 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
                     <div class="row">
-                        <? //if (isset($content)) echo $content; ?>
+                        
                         
                         <div class="col-lg-12">
                             <h1 class="page-header">
@@ -110,12 +108,12 @@
                         <div class="col-lg-4">
                             <form id="form_site" action="/user/stat/" method="get">
                                 <select id="site_select"  data-placeholder="Фильтр по сайтам" name="site" class="chosen-select-deselect"  tabindex="-1">
-                                    <option <? //if (!$this->input->get('site')) echo 'selected="selected"'; ?> value="">По всем сайтам</option>
-                                    <? //if ($site->num_rows() > 0): ?>
-                                        <? //foreach ($site->result() as $s): ?>
-                                            <option <? //if ($this->input->get('site') == $s->site) echo 'selected="selected"'; ?> value="<?= $s->site ?>"><?= $s->site ?></option>
-                                        <? ///endforeach; ?>      
-                                    <? //endif; ?>      
+                                    <option  value="">По всем сайтам</option>
+                                    
+                                        
+                                            <option  value=""></option>
+                                            
+                                          
                                 </select>
                             </form>
                         </div>
