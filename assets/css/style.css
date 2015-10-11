@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,cyrillic-ext);
+body{
+    /*background-color: #F3F3F4;*/
+	background:none;
+  font-family: 'Roboto Condensed', sans-serif!important;
+  font-size: 12px; 
+}
+
+body { padding-top: 10px; }
+#auth-form{
+    /*width: 400px;*/
+    background: #fff;
+    /*margin-top: 30px;*/
+    padding: 25px;
+    /*border-radius: 5px;*/
+    /*box-shadow: 1px 1px 7px 0 black*/
+}
+
+#auth-form .alert{
+     font-size: 13px;
+     padding: 10px
+}
+
+.help-inline{
+    color: #666;
+    font-size: 13px;
+    margin-top: 10px
+}
+.container{
+    max-width: 1020px
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+    color: #fff;
+    text-transform: uppercase
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #2B587A;
+    border-color: #2B587A;
+}
+
+
+.btn-link:hover, .btn-link:focus {
+    color: #2B587A;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #2B587A;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+
+.li-home li{
+    margin-bottom: 5px;
+    color: #000
+}
