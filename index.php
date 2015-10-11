@@ -45,7 +45,7 @@
                     
                     <? //if ($this->config->item('type_inst') == 'demo' or $this->config->item('type_inst') == 'multi'): ?>
                         <li>
-                            <a href="/user/history">На балансе <b> <?//= $this->lib->get_user_balance($this->user->id) ?></b> лидов</a>
+                            <a href="/user/history">На балансе 1000<b> <?//= $this->lib->get_user_balance($this->user->id) ?></b> лидов</a>
                         </li>
                     <? //endif; ?>
                         
